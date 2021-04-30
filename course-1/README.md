@@ -1,4 +1,4 @@
-# AI Workflow: Business Priorities and Data Ingestion
+# [AI Workflow: Business Priorities and Data Ingestion]((https://www.coursera.org/learn/ibm-ai-workflow-business-priorities-data-ingestion?specialization=ibm-ai-workflow))
 
 ### Course 1 of 6
 #### Case Study - Data ingestion

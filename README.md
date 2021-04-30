@@ -1,10 +1,6 @@
 # [AI Enterprise Workflow Specialization](https://www.coursera.org/specializations/ibm-ai-workflow)
 
-##### [Course 1 Certificate](https://www.coursera.org/account/accomplishments/verify/UVV69AQAVB52)
-##### [Course 2 Certificate](https://www.coursera.org/account/accomplishments/verify/S8CHBF84S52B)
-##### [Course 3 Certificate](https://www.coursera.org/account/accomplishments/verify/5ETQ3MPZYLDW)
-##### [Course 4 Certificate](https://www.coursera.org/account/accomplishments/verify/DPP5KAE3964X)
-##### [Course 5 Certificate](https://www.coursera.org/account/accomplishments/verify/CKGJMUBCSB2P)
+##### Certificates: [Course 1, ](https://www.coursera.org/account/accomplishments/verify/UVV69AQAVB52)[Course 2, ](https://www.coursera.org/account/accomplishments/verify/S8CHBF84S52B)[Course 3, ](https://www.coursera.org/account/accomplishments/verify/5ETQ3MPZYLDW)[Course 4, ](https://www.coursera.org/account/accomplishments/verify/DPP5KAE3964X)[Course 5](https://www.coursera.org/account/accomplishments/verify/CKGJMUBCSB2P)
 
 
 ### [Course 1](https://www.coursera.org/learn/ibm-ai-workflow-business-priorities-data-ingestion?specialization=ibm-ai-workflow)

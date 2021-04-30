@@ -1,6 +1,6 @@
-# AI-Enterprise-Workflow-Specialization
+# AI Workflow: Business Priorities and Data Ingestion
 
-### Course 1
+### Course 1 of 6
 #### Case Study - Data ingestion
 The goal of this case study is to put into practice the important concepts from module 1. We will go through the basic process that begins with refining the business opportunity and ensuring that it is articulated using a scientific thought process.
 

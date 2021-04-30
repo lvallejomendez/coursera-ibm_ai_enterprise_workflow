@@ -1,5 +1,12 @@
 # [AI Enterprise Workflow Specialization](https://www.coursera.org/specializations/ibm-ai-workflow)
 
+##### [Course 1 Certificate](https://www.coursera.org/account/accomplishments/verify/UVV69AQAVB52)
+##### [Course 2 Certificate](https://www.coursera.org/account/accomplishments/verify/S8CHBF84S52B)
+##### [Course 3 Certificate](https://www.coursera.org/account/accomplishments/verify/5ETQ3MPZYLDW)
+##### [Course 4 Certificate](https://www.coursera.org/account/accomplishments/verify/DPP5KAE3964X)
+##### [Course 5 Certificate](https://www.coursera.org/account/accomplishments/verify/CKGJMUBCSB2P)
+
+
 ### [Course 1](https://www.coursera.org/learn/ibm-ai-workflow-business-priorities-data-ingestion?specialization=ibm-ai-workflow)
 #### Case Study - Data ingestion
 The goal of this case study is to put into practice the important concepts from module 1. We will go through the basic process that begins with refining the business opportunity and ensuring that it is articulated using a scientific thought process.

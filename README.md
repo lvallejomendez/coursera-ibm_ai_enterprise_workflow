@@ -22,3 +22,25 @@ The business opportunity and case study was first mentioned in Unit 2 of module 
 1. Gather all relevant data from the sources of provided data
 2. Implement several checks for quality assurance
 3. Take the initial steps towards automation of the ingestion pipeline
+
+<br>
+<br>
+
+### [Course 2.](https://www.coursera.org/learn/ibm-ai-workflow-data-analysis-hypothesis-testing) Case Study - Multiple Testing
+
+When we perform a large number of statistical tests, some will have $p$-values less than the designated level of $\alpha$ (e.g. 0.05) purely by chance, even if all the null hypotheses are really true.  This is an inherent risk of using inferrential statistics.  Fortunately, there are several techniques to mitigate the risk.
+
+We are going to look at the 2018 world cup data in this example.  
+
+The case study is comprised of the following sections:
+
+1. Data Cleaning
+2. Data Visualization
+3. NHT
+4. Adjust NHT results for multiple comparisons
+
+Data science work that focuses on creating a predictive model is perhaps the hallmark of the field today, but there are still many use cases where [inferential statistics](https://en.wikipedia.org/wiki/Statistical_inference) are the best tool available. One issue with statistical inference is that there are situations where [performing multiple tests](https://en.wikipedia.org/wiki/Multiple_comparisons_problem) is a  logical way to accomplish a task, but it comes at the expense of an increased rate of false positives or Type I errors.
+
+In this case study you will apply techniques and knowledge from all of the units in Module 2.
+
+$-b \pm \sqrt{b^2 - 4ac} \over 2a$

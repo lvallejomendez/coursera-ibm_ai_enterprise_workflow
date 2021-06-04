@@ -28,7 +28,7 @@ The business opportunity and case study was first mentioned in Unit 2 of module 
 
 ### [Course 2.](https://www.coursera.org/learn/ibm-ai-workflow-data-analysis-hypothesis-testing) Case Study - Multiple Testing
 
-When we perform a large number of statistical tests, some will have $p$-values less than the designated level of $\alpha$ (e.g. 0.05) purely by chance, even if all the null hypotheses are really true.  This is an inherent risk of using inferrential statistics.  Fortunately, there are several techniques to mitigate the risk.
+When we perform a large number of statistical tests, some will have $p$-values less than the designated level of alpha (e.g. 0.05) purely by chance, even if all the null hypotheses are really true.  This is an inherent risk of using inferrential statistics.  Fortunately, there are several techniques to mitigate the risk.
 
 We are going to look at the 2018 world cup data in this example.  
 
@@ -43,4 +43,6 @@ Data science work that focuses on creating a predictive model is perhaps the hal
 
 In this case study you will apply techniques and knowledge from all of the units in Module 2.
 
-$-b \pm \sqrt{b^2 - 4ac} \over 2a$
+$$
+\LARGE e^{i\pi} = -1
+$$

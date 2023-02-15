@@ -149,6 +149,44 @@ def poisson_distribution(mu,k):
   '''
 ```
 
+To represent the data with a Poisson distribution, we can use the following code:
+
+```python
+import scipy.stats as stats
+
+mu = 4  # expected number of accidents per month
+dist = stats.poisson(mu)
+```
+
+To calculate the probability of more than 7 accidents, we can use the sf (survival function) method of the Poisson distribution object, which gives the probability of the random variable being greater than or equal to a certain value:
+
+```python
+prob = dist.sf(7)
+```
+
+So the complete function would be:
+
+```python
+import scipy.stats as stats
+
+def poisson_distribution(mu, k):
+    '''
+    INPUT: parameter of the poisson distribution and number of accidents
+    OUTPUT: determined probability
+    '''
+    dist = stats.poisson(mu)
+    prob = dist.sf(k-1)  # using sf to calculate the probability of k or more accidents
+    return prob
+```
+
+We can then call this function with the values mu = 4 and k = 7 to get the probability:
+
+```python
+prob = poisson_distribution(4, 7)
+print(prob)
+```
+
+This would output the probability of more than 7 accidents as a float value.
 
 ### 13. Gaussian distribution
 

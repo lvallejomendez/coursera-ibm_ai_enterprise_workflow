@@ -1,31 +1,27 @@
 # 1. For a given input list: 1, 2, 3, 4
 
 def get_cubed(lst):
-  '''
-  INPUT: LIST (containing numeric elements)
-  OUTPUT: LIST (cubed value of each even number in originals list)
-  return a list containing each element cubed
-  '''
-  enum = []
-  for n in lst:
-      enum.append(n**3)
-  return enum
+  """
+  INPUT: list (containing numeric elements)
+  OUTPUT: list (cubed value of each even number in original list)
+  Return a list containing the cubed value of each element.
+  """
+  return [n**3 for n in lst]
+
 print(get_cubed([1, 2, 3, 4]))
+
 
 
 # 2. For a given input list: 1,2,3,4,5,6,7
 
 def get_squared_evens(lst):
-    '''
-    INPUT: LIST (containing numeric elements)
-    OUTPUT: LIST (squared value of each even number in originals list)
-    return squared evens in a list
-    '''
-    enum = []
-    for n in lst:
-        if n % 2 == 0:
-            enum.append(n**2)
-    return enum
+  """
+  INPUT: list (containing numeric elements)
+  OUTPUT: list (squared value of each even number in original list)
+  Return a list containing the squared value of each even number.
+  """
+  return [n**2 for n in lst if n % 2 == 0]
+
 print(get_squared_evens([1, 2, 3, 4, 5, 6, 7]))
 
 

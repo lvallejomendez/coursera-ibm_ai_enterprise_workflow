@@ -94,13 +94,25 @@ calculate_l1_norm(v)
 import numpy as np
 
 def get_vector_sum(vectorLower, vectorUpper):
-  '''
-  INPUT: vector lower and upper bounds
-  OUTPUT: calculated value for vector sum
-  (1) create a vector ranging from 1:150
-  (2) transform the vector into a matrix with 10 rows and 15 columns
-  (3) print the sum for the 10 rows
-  '''
+    '''
+    INPUT: vector lower and upper bounds
+    OUTPUT: calculated value for vector sum
+    (1) create a vector ranging from 1:150
+    (2) transform the vector into a matrix with 10 rows and 15 columns
+    (3) print the sum for the 10 rows
+    '''
+    # create a vector ranging from 1 to 150
+    v = np.arange(vectorLower, vectorUpper)
+
+    # reshape the vector into a 10x15 matrix
+    m = v.reshape((10, 15))
+
+    # calculate the row sums and return as a list
+    row_sums = np.sum(m, axis=1)
+    return row_sums.tolist()
+
+get_vector_sum(1, 151)
+
 
 
 # 10. Which of the following pairs of events are mutually exclusive. There can be more than one answer.
@@ -113,22 +125,36 @@ def get_vector_sum(vectorLower, vectorUpper):
 
 import scipy.stats as stats
 
-def geometric_distribution(p,k):
+def geometric_distribution(p, k):
   '''
-  INPUT: probability of success and trials
-  OUTPUT: determined probability
+  INPUT: probability of success and number of trials
+  OUTPUT: probability of k trials until first success
   '''
+  return stats.geom.pmf(k, p)
+
+p = 1/10
+k = 20
+prob = geometric_distribution(p, k)
+print("The probability of waiting until 20 people walk by before someone buys a taco is:", prob)
+
 
 
 # 12. Poisson distribution
 
 import scipy.stats as stats
 
-def poisson_distribution(mu,k):
-  '''
-  INPUT: parameter of the poisson distribution and number of accidents
-  OUTPUT: determined probability
-  '''
+def poisson_distribution(mu, k):
+    '''
+    INPUT: parameter of the poisson distribution and number of accidents
+    OUTPUT: determined probability
+    '''
+    dist = stats.poisson(mu)
+    prob = dist.sf(k-1)  # using sf to calculate the probability of k or more accidents
+    return prob
+
+prob = poisson_distribution(4, 7)
+print(prob)
+
 
 
 # 13. Gaussian distribution
@@ -140,6 +166,18 @@ def gaussian_distribution(loc_val, scale_val, cdf_val):
     INPUT: loc (mean of the distribution), scale (standard deviation of the distribution), and cdf values
     OUTPUT: determined probability
     '''
+    # create normal distribution object with given mean and standard deviation
+    dist = stats.norm(loc=loc_val, scale=scale_val)
+    
+    # calculate probability of observing a value greater than or equal to cdf_val
+    prob = 1 - dist.cdf(cdf_val)
+    
+    return prob
+
+
+prob = gaussian_distribution(50.0, 20.0, 80)
+print(prob)
+
 
 
 # 14. Perform matrix multiplication on a square matrix HINT: A 2X2 matrix times a 2x2 matrix should yield a 2x2 matrix
@@ -159,17 +197,10 @@ def matrix_multiplication(A,B):
   |-1 2 0 |
   You may not use numpy. Write your solution in straight python
   '''
-  res = [[0 for x in range(3)] for y in range(3)]
-  
-  # explicit for loops
-  for i in range(len(A)):
-    for j in range(len(B[0])):
-      for k in range(len(B)):
-        # resulted matrix
-        res[i][j] += A[i][k] * B[k][j]
-        
-  return res
+  B_T = [[B[j][i] for j in range(len(B))] for i in range(len(B[0]))]
+  return [[sum(A[i][k] * B_T[j][k] for k in range(len(A[0]))) for j in range(len(B[0]))] for i in range(len(A))]
 
+    
 A = [[12,7,3], [4,5,6], [7,8,9]]
 B = [[1,0,0], [0,1,0], [0,0,1]]
 
